@@ -2,9 +2,9 @@
 
 namespace Fase22\Reports;
 
+use Fase22\Reports\Commands\ReportsCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Fase22\Reports\Commands\ReportsCommand;
 
 class ReportsServiceProvider extends PackageServiceProvider
 {
@@ -25,6 +25,6 @@ class ReportsServiceProvider extends PackageServiceProvider
 
     public function boot(): void
     {
-        $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
     }
 }

@@ -12,7 +12,7 @@ trait Reportable
             'reportable_id' => $this->id,
             'reportable_type' => get_class($this),
             'reason' => $reason,
-            'reporter_id' => auth()->id() ?? null
+            'reporter_id' => auth()->id() ?? null,
         ]);
     }
 

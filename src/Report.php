@@ -7,12 +7,11 @@ use Illuminate\Database\Eloquent\Relations\MorphTo;
 
 class Report extends Model
 {
-
     protected $fillable = [
         'reportable_id',
         'reportable_type',
         'reporter_id',
-        'reason'
+        'reason',
     ];
 
     public function reportable(): MorphTo

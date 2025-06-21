@@ -2,9 +2,9 @@
 
 namespace Fase22\Reports\Tests;
 
+use Fase22\Reports\ReportsServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Fase22\Reports\ReportsServiceProvider;
 
 class TestCase extends Orchestra
 {
