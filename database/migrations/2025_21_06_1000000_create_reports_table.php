@@ -8,11 +8,12 @@ return new class extends Migration
 {
     public function up()
     {
-        Schema::create('migration_table_name_table', function (Blueprint $table) {
+        Schema::create('reports', function (Blueprint $table) {
             $table->id();
-
-            // add fields
-
+            $table->unsignedInteger('reportable_id');
+            $table->string('reportable_type');
+            $table->unsignedInteger('reporter_id')->nullable();
+            $table->text('reason')->nullable();
             $table->timestamps();
         });
     }
